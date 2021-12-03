@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Styles from './login-styles.scss'
 import { Footer, LoginHeader, Input, FormStatus } from '@/presentation/components'
 import Context from '@/presentation/context/form/form-context'
-import { Validation } from '@/presentation/components/protocols/validation'
+import { Validation } from '@/presentation/components/protocols/validation.interface'
 
 type Props = {
   validation?: Validation
