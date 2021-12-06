@@ -1,4 +1,4 @@
-import { FieldValidation } from '@/validation/protocols/fiels-validation'
+import { FieldValidation } from '@/validation/protocols'
 import { EmailValidation, RequiredFieldValidation, MinLengthValidation } from '@/validation/validators'
 
 export class ValidationBuilder {
