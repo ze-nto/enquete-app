@@ -1,0 +1,1 @@
+[![Build Status](https://app.travis-ci.com/ze-nto/enquete-app.svg?branch=main)](https://app.travis-ci.com/ze-nto/enquete-app)
