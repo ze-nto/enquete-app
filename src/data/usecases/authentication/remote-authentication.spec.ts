@@ -26,7 +26,6 @@ describe('RemoteAuthentication', () => {
     const url = faker.internet.url()
     const { sut, httpPostClientSpy } = makeSut(url)
     await sut.auth(mockAuthentication())
-
     expect(httpPostClientSpy.url).toBe(url)
   })
 
