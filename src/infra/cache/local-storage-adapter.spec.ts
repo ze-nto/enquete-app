@@ -1,8 +1,8 @@
 import 'jest-localstorage-mock'
 import faker from 'faker'
-import { LocalSrorageAdapter } from '@/infra/cache/local-storage-adapter'
+import { LocalStorageAdapter } from '@/infra/cache/local-storage-adapter'
 
-const makeSut = (): LocalSrorageAdapter => new LocalSrorageAdapter()
+const makeSut = (): LocalStorageAdapter => new LocalStorageAdapter()
 
 describe('LocalStorageAdapter', () => {
   beforeEach(() => {
