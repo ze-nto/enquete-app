@@ -34,4 +34,14 @@ button{
     opacity: 0.9;
     cursor: pointer;
   }
+
+  &:disabled {
+    background-color: $disabledBg;
+    color: $disabledColor;
+
+    &:hover {
+      opacity: 1;
+      cursor: auto;
+    }
+  }
 }
