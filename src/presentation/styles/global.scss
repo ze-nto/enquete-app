@@ -15,16 +15,13 @@ body{
 input[type="text"],
 input[type="password"],
 input[type="email"]{
-  border: 1px solid $primaryLight;
-  line-height: 40px;
-  border-radius: 4px;
-  outline: $primaryDark;
-  padding: 0 40px 0 8px;
+  border: none;
+  outline: none;
 }
 
 button{
   background-color: $primary;
-  line-height: 60px;
+  line-height: 48px;
   color: $white;
   border-radius: 8px;
   font-size: 16px;
