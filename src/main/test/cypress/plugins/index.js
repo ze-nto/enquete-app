@@ -2,8 +2,8 @@ const cypressTypeScriptPreprocessor = require('./cy-ts-preprocessor.js')
 
 /// <reference types="cypress" />
 
-/** 
-* @type {Cypress.PluginConfig} 
+/**
+* @type {Cypress.PluginConfig}
 */
 
 module.exports = (on, config) => {
