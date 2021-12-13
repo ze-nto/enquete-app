@@ -120,4 +120,19 @@ describe('Login', () => {
     cy.getByTestId('submit').dblclick()
     cy.get('@request.all').should('have.length', 1)
   })
+
+  it('Should submit form if enter is pressed', () => {
+    cy.intercept('POST', /login/, {
+      statusCode: 200,
+      body: {
+        accessToken: faker.datatype.uuid()
+      }
+    })
+    cy.getByTestId('email').focus().type(faker.internet.email())
+    cy.getByTestId('password').focus().type(faker.random.alphaNumeric(5)).type('{enter}')
+    cy.getByTestId('main-error').should('not.exist')
+    cy.getByTestId('spinner').should('not.exist')
+    cy.url().should('equal', `${baseUrl}/`)
+    cy.window().then(window => assert.isOk(window.localStorage.getItem('accessToken')))
+  })
 })
