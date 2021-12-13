@@ -16,7 +16,7 @@ export const mockUnexpectedError = (url: RegExp, method: Method): void => {
     body: {
       error: faker.random.words()
     }
-  })
+  }).as('request')
 }
 
 export const mockOk = (url: RegExp, method: Method, response: any): void => {
@@ -28,4 +28,14 @@ export const mockOk = (url: RegExp, method: Method, response: any): void => {
       body: response
     }
   ).as('request')
+}
+
+export const mockEmailInUseError = (url: RegExp): void => {
+  cy.intercept({
+    method: 'POST',
+    url
+  }, {
+    statusCode: 403,
+    body: { error: faker.random.words() }
+  }).as('request')
 }
