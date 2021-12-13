@@ -7,7 +7,7 @@ export const mockInvalidCredentialsError = (url: RegExp): void => {
     body: {
       error: faker.random.words()
     }
-  })
+  }).as('request')
 }
 
 export const mockUnexpectedError = (url: RegExp, method: Method): void => {

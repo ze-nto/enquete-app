@@ -96,4 +96,14 @@ describe('SignUp', () => {
     cy.getByTestId('submit').dblclick()
     FormHelper.testHttpCallsCount(1)
   })
+
+  it('Should submit form if enter is pressed', () => {
+    Http.mockOk()
+    populateFields()
+    cy.getByTestId('passwordConfirmation').focus().type('{enter}')
+    cy.getByTestId('main-error').should('not.exist')
+    cy.getByTestId('spinner').should('not.exist')
+    FormHelper.testUrl('/')
+    FormHelper.testLocalStorageItem('accessToken')
+  })
 })
