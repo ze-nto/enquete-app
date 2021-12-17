@@ -66,13 +66,13 @@
             margin-left: 24px;
             align-self: center;
             align-items: center;
-            flex-shrink: 0;
             justify-content: center;
             border-radius: 8px;
             color: $white;
             background-color: $primaryLight;
             width: 70px;
             height: 100px;
+            flex-shrink: 0;
 
             .day {
               font-size: 40px;
@@ -92,6 +92,7 @@
             font-size: 18px;
             margin: 24px;
             align-self: center;
+            flex-grow: 1;
           }
         }
 
@@ -113,3 +114,21 @@
   }
 }
 
+@media only screen and (max-width: 600px) {
+  .surveyListWrap {
+  
+    .contentWrap {
+      ul {
+        flex-direction: column;
+        
+        li{
+          flex-basis: 100%;
+          .surveyContent {
+            padding: 40px 0;
+          }
+    
+        }
+      }
+    }
+  }
+}
