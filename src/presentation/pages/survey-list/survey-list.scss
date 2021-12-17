@@ -70,8 +70,8 @@
             top: 0;
             left: 0;
             transform: translateX(-100%);
-            background-image: linear-gradient(to right, transparent, rgba($white, 0.2), transparent);
-            animation: shimmer 1.2s infinite;
+            background-image: linear-gradient(to right, transparent, rgba($white, 0.6), transparent);
+            animation: shimmer 1.5s infinite;
           }
 
         }
