@@ -1,1 +1,1 @@
-export * from './current-account-adpter'
+export * from './current-account-adapter'
