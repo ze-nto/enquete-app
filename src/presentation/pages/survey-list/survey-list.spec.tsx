@@ -1,8 +1,8 @@
+import React from 'react'
+import { render, screen } from '@testing-library/react'
 import { SurveyModel } from '@/domain/models'
 import { LoadSurveyList } from '@/domain/usecases'
 import { SurveyList } from '@/presentation/pages'
-import { render, screen } from '@testing-library/react'
-import React from 'react'
 
 class LoadSurveyListSpy implements LoadSurveyList {
   callsCount = 0
