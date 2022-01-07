@@ -1,3 +1,3 @@
 export interface GetStorage {
-  det: (key: string) => any
+  get: (key: string) => any
 }
