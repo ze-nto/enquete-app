@@ -23,10 +23,3 @@ export class LoadSurveyListSpy implements LoadSurveyList {
     return this.surveys
   }
 }
-
-// answers: [{
-//   answer: faker.random.words(4),
-//   image: faker.internet.url()
-// }, {
-//   answer: faker.random.words(5)
-// }],
