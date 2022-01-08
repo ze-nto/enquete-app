@@ -58,13 +58,6 @@ describe('Login', () => {
     FormHelper.testUrl('/login')
   })
 
-  it('Should presents UnexpectedError if invalidData is returned', () => {
-    Http.mockInvalidData()
-    simulateValidSubmit()
-    FormHelper.testMainError('Algo de errado aconteceu. Tente novamente em breve')
-    FormHelper.testUrl('/login')
-  })
-
   it('Should presents save accessToken if valid credentials are provided', () => {
     Http.mockOk()
     simulateValidSubmit()

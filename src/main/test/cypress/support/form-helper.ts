@@ -17,7 +17,7 @@ export const testHttpCallsCount = (count: number): void => {
 }
 
 export const testUrl = (path: string): void => {
-  cy.url().should('equal', `${baseUrl}${path}`)
+  cy.url().should('eq', `${baseUrl}${path}`)
 }
 
 export const testLocalStorageItem = (key: string): void => {
