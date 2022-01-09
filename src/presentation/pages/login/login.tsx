@@ -3,7 +3,7 @@ import { Link, useHistory } from 'react-router-dom'
 import Styles from './login-styles.scss'
 import { Footer, LoginHeader, Input, FormStatus, SubmitButton } from '@/presentation/components'
 import { FormContext, ApiContext } from '@/presentation/contexts'
-import { Validation } from '@/presentation/components/protocols'
+import { Validation } from '@/presentation/protocols'
 import { Authentication } from '@/domain/usecases'
 
 type Props = {
