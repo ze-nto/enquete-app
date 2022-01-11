@@ -12,7 +12,7 @@ export const mockUnauthorizedError = (url: RegExp): void => {
 
 export const mockServerError = (url: RegExp, method: Method): void => {
   cy.intercept({ method, url }, {
-    statusCode: faker.helpers.randomize([400, 404, 500]),
+    statusCode: 500,
     body: {
       error: faker.random.words()
     }
