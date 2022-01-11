@@ -1,5 +1,4 @@
-import * as Helper from '../support/helpers'
-import faker from 'faker'
+import * as Helper from '../utils/helpers'
 
 describe('Login', () => {
   it('Should logout id SurveyList has no token', () => {
