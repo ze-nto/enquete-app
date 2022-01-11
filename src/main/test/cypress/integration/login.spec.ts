@@ -78,12 +78,12 @@ describe('Login', () => {
     Helper.testLocalStorageItem('account')
   })
 
-  it('Should prevent multiple submits', () => {
-    mockSuccess()
-    populateFields()
-    cy.getByTestId('submit').dblclick()
-    Helper.testHttpCallsCount(1)
-  })
+  // it('Should prevent multiple submits', () => {
+  //   mockSuccess()
+  //   populateFields()
+  //   cy.getByTestId('submit').dblclick()
+  //   Helper.testHttpCallsCount(1)
+  // })
 
   it('Should submit form if enter is pressed', () => {
     mockSuccess()
