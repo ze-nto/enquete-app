@@ -9,3 +9,4 @@ deploy:
   api_key: $HEROKU_API
   app: enquete-4dev-app
   skip_cleanup: true
+  all_branches: true
