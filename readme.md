@@ -1,2 +1,3 @@
 [![Build Status](https://app.travis-ci.com/ze-nto/enquete-app.svg?branch=main)](https://app.travis-ci.com/ze-nto/enquete-app)
 [![Coverage Status](https://coveralls.io/repos/github/ze-nto/enquete-app/badge.svg?branch=main)](https://coveralls.io/github/ze-nto/enquete-app?branch=main)
+[![Known Vulnerabilities](https://snyk.io/test/github/ze-nto/enquete-app/badge.svg)](https://snyk.io/test/github/ze-nto/enquete-app)
