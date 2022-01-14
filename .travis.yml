@@ -10,7 +10,6 @@ cache:
     - ~/.cache
 script:
   - eslint 'src/**'
-  - npm run test:coveralls
   - npm run test:cypress:ci
 deploy:
   provider: heroku
@@ -20,3 +19,5 @@ deploy:
   on:
     tags: true
     all_branches: true
+after_success:
+  - npm run test:coveralls
