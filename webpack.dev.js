@@ -35,8 +35,10 @@ module.exports = merge(common, {
   devServer: {
     historyApiFallback: true,
     devMiddleware: {
-      publicPath: '/public',
       writeToDisk: true
+    },
+    static: {
+      directory: './public'
     }
   },
   plugins: [

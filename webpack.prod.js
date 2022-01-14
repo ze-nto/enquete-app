@@ -3,6 +3,7 @@ const common = require('./webpack.common.js')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const { merge } = require('webpack-merge')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const FaviconsWebpack = require('favicons-webpack-plugin')
 
 module.exports = merge(common, {
   mode: 'production',
@@ -47,6 +48,9 @@ module.exports = merge(common, {
     }),
     new MiniCssExtractPlugin({
       filename: 'main-bundle-[fullhash].css'
+    }),
+    new FaviconsWebpack({
+      logo: './public/favicon.png'
     })
   ]
 })
