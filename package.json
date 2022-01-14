@@ -1,6 +1,6 @@
 {
   "name": "enquete",
-  "version": "1.6.3",
+  "version": "1.6.4",
   "description": "React App using TDD, Clean Architecture and Typescript",
   "main": "index.js",
   "scripts": {
